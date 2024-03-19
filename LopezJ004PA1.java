@@ -1,6 +1,6 @@
 /**
- * @ (#) LopezJ004PA1.java
- * @ author Justin Lopez
+ * @ (#) Justin001.java
+ * @ author Justin L
  * @ version 1.00 2024/02/26
  * 
  * PROGRAM PURPOSE: Create a program that allows a user to purchase
@@ -10,7 +10,7 @@
 import java.util.Scanner; // program use class Scanner
 import java.util.Calendar; // program formatting dates and time
 
-public class LopezJ004PA1
+public class Justin001
 {
   /** METHOD PURPOSE: User is prompted to choose a laptop.
     * If the choice is not in the proper range an error message is
@@ -161,4 +161,4 @@ if (choice > 0)
 }//END if valid choice range begins 
 
 }// END main()
-}//END CLASS LopezJ004PA1
+}//END CLASS Justin001
