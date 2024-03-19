@@ -25,24 +25,7 @@ import java.util.Calendar; // program formatting dates and time
 
 public class Justin001
 {
-  /** METHOD PURPOSE: User is prompted to choose a laptop.
-    * If the choice is not in the proper range an error message is
-    * displayed and the user is asked whether or not to continue. 
-    * If the choice is in the proper range the name of the laptop is
-    * determined and its price: then the user is prompted for 
-    * the quantity of the laptop. Once the quantity is entered, 
-    * the item total for that line item is calculated followed by the 
-    * calculations for the subtotal. An if-else determines the printing
-    * of the $ sign in the first line item. The if-else also adds the 
-    * line item to the order summary which is a report of the users purchase.
-    * The user is then asked whether or not to continue. If the user says yes,
-    * then the whole process begins again. If the user say no then the tax
-    * and total are calculated, the subtotal, tax and total lines are added 
-    * to the order summary, and the order summary is printd only when there
-    * is a laptop purchase. 
-    */
   
-  // main method beings execution 
   public static void main(String[] args){
     
     String laptop = "";
@@ -59,10 +42,8 @@ public class Justin001
     
     char cont = 'Y';
     
-    // create a Scanner to obtian input 
     Scanner input = new Scanner(System.in);
     
-    //get current date and time
     Calendar dateTime = Calendar.getInstance();
     
     String orderSummary = String.format("%n%nLAPTOP ORDER SUMMARY%n"
@@ -70,8 +51,7 @@ public class Justin001
                                           +"%nTime: %tr%n", dateTime, dateTime);
     
     while(Character.toUpperCase(cont) == 'Y'){
-      
-      
+    
       System.out.printf("%nTOP LAPTOPS OF %tY"
                           + "%n%n1. %-23s %7s $%,9.2f"
                           + "%n2. %-23s %8s %,9.2f"
@@ -145,14 +125,14 @@ public class Justin001
  {
    orderSummary += String.format("%n%, -9d %-30s %9s %,17.2f",
                                  qty, laptop, " ", lineItem);
- }//END else for no $ sign
+ } //END else for no $ sign
  input.nextLine();
  
  System.out.printf("%nEnter 'Y' to add another laptop to you purchase or 'N' to exit; ");
  
  cont = input.nextLine().charAt(0);
    
-   }//END while
+   } //END while
 if (choice > 0)
 {
   if(choice < 6)
