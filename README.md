@@ -20,27 +20,13 @@ The objective of this Java program is to facilitate a user-friendly interface fo
 
 ## Steps
 
-import java.util.Scanner; // program use class Scanner
-import java.util.Calendar; // program formatting dates and time
+import java.util.Scanner; 
+// program use class Scanner
+import java.util.Calendar; 
+// program formatting dates and time
 
 public class Justin004PA1
 {
-  /** METHOD PURPOSE: User is prompted to choose a laptop.
-    * If the choice is not in the proper range an error message is
-    * displayed and the user is asked whether or not to continue. 
-    * If the choice is in the proper range the name of the laptop is
-    * determined and its price: then the user is prompted for 
-    * the quantity of the laptop. Once the quantity is entered, 
-    * the item total for that line item is calculated followed by the 
-    * calculations for the subtotal. An if-else determines the printing
-    * of the $ sign in the first line item. The if-else also adds the 
-    * line item to the order summary which is a report of the users purchase.
-    * The user is then asked whether or not to continue. If the user says yes,
-    * then the whole process begins again. If the user say no then the tax
-    * and total are calculated, the subtotal, tax and total lines are added 
-    * to the order summary, and the order summary is printd only when there
-    * is a laptop purchase. 
-    */
   
   // main method beings execution 
   public static void main(String[] args){
