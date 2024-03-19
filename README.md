@@ -21,14 +21,10 @@ The objective of this Java program is to facilitate a user-friendly interface fo
 ## Steps
 
 import java.util.Scanner; 
-// program use class Scanner
-import java.util.Calendar; 
-// program formatting dates and time
+import java.util.Calendar;
 
-public class Justin004PA1
-{
-  
-  // main method beings execution 
+public class LopezJ004PA1
+{ 
   public static void main(String[] args){
     
     String laptop = "";
@@ -160,4 +156,4 @@ if (choice > 0)
 }//END if valid choice range begins 
 
 }// END main()
-}//END CLASS Justin004PA1
+}//END CLASS LopezJ004PA1
