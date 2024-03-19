@@ -19,14 +19,6 @@ The objective of this Java program is to facilitate a user-friendly interface fo
 
 
 ## Steps
-/**
- * @ (#) Justin004PA1.java
- * @ author Justin L.
- * @ version 1.00 2024/03/19
- * 
- * PROGRAM PURPOSE: Create a program that allows a user to purchase
- * one or more laptops.
- */
 
 import java.util.Scanner; // program use class Scanner
 import java.util.Calendar; // program formatting dates and time
