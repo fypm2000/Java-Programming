@@ -20,11 +20,29 @@ The objective of this Java program is to facilitate a user-friendly interface fo
 
 ## Steps
 
-import java.util.Scanner; 
-import java.util.Calendar;
+import java.util.Scanner; // program use class Scanner
+import java.util.Calendar; // program formatting dates and time
 
-public class LopezJ004PA1
-{ 
+public class Justin001
+{
+  /** METHOD PURPOSE: User is prompted to choose a laptop.
+    * If the choice is not in the proper range an error message is
+    * displayed and the user is asked whether or not to continue. 
+    * If the choice is in the proper range the name of the laptop is
+    * determined and its price: then the user is prompted for 
+    * the quantity of the laptop. Once the quantity is entered, 
+    * the item total for that line item is calculated followed by the 
+    * calculations for the subtotal. An if-else determines the printing
+    * of the $ sign in the first line item. The if-else also adds the 
+    * line item to the order summary which is a report of the users purchase.
+    * The user is then asked whether or not to continue. If the user says yes,
+    * then the whole process begins again. If the user say no then the tax
+    * and total are calculated, the subtotal, tax and total lines are added 
+    * to the order summary, and the order summary is printd only when there
+    * is a laptop purchase. 
+    */
+  
+  // main method beings execution 
   public static void main(String[] args){
     
     String laptop = "";
@@ -97,10 +115,10 @@ public class LopezJ004PA1
               else {
                 System.out.printf("%nInvalid choice! Try again%n"); 
                                     
-                                    }//END IfElse
-            }//END IfElse
+                                    } //END IfElse
+            } //END IfElse
           } //END IfElse
-        }//END IfElse
+        } //END IfElse
       } //END IfElse
 
  if(choice > 0)
@@ -120,7 +138,7 @@ public class LopezJ004PA1
    orderSummary += String.format("%n%,-9d %-30s %8s $%,17.2f",
                                  qty, laptop, " ", lineItem);
    trigger = 0;
- }//END if for $ sign 
+ } //END if for $ sign 
    }
  }
  else
@@ -152,8 +170,8 @@ if (choice > 0)
     
     System.out.printf("%s", orderSummary);
     
-  }// END if valid choice range ends print order summary 
-}//END if valid choice range begins 
+  } // END if valid choice range ends print order summary 
+} //END if valid choice range begins 
 
-}// END main()
-}//END CLASS LopezJ004PA1
+} // END main()
+} //END CLASS Justin001
